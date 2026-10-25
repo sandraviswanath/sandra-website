@@ -1,0 +1,31 @@
+.home-orbital{--tone:#a0bdff;position:relative;isolation:isolate;overflow:clip;display:grid;grid-template-columns:1.1fr 1fr;align-items:center;gap:65px;min-height:100svh;padding:155px max(24px,6vw) 125px;color:#f3f5fb;background:radial-gradient(ellipse at 80% 40%,#30447766,transparent 60%),#0f1627}
+.orbital-home-copy{position:relative;z-index:2;max-width:660px;transform:translate(calc(var(--mx)*-5px),calc(var(--my)*-5px));transition:transform .3s ease-out}
+.orbital-home-identity{font-size:.94rem;font-weight:600;letter-spacing:-.015em;margin-bottom:35px}
+.orbital-home-identity>span{display:block;font-weight:400;font-size:.72rem;color:#9eb0d1;margin-top:5px}
+.orbital-home-eyebrow{font-size:.6rem;letter-spacing:.14em;color:var(--tone);margin-bottom:25px}
+.orbital-home-copy h1{font-size:clamp(3.5rem,6.5vw,7rem);font-weight:550;line-height:1.04;letter-spacing:-.055em}
+.orbital-home-copy h1>span{color:var(--tone)}
+.orbital-home-description{font-size:1.05rem;line-height:1.8;max-width:430px;color:#a6b2ca;margin-top:28px}
+.orbital-home-actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px}
+.orbital-home-actions .btn{border-radius:7px;font-size:.82rem;padding:13px 18px;transform:translate(calc(var(--mx)*4px),calc(var(--my)*3px))}
+.orbital-home-actions .btn.primary{background:var(--tone);border-color:var(--tone);color:#101725}
+.orbital-home-actions .btn:hover{transform:translateY(-4px);box-shadow:0 10px 25px #a0bdff18}
+.orbital-home-visual{position:relative;min-width:0;max-width:600px;width:100%;justify-self:center}
+.home-orbital .preview-orbital{height:450px;transform-style:preserve-3d}
+.home-orbital .preview-portrait{display:block;object-fit:contain;transform:scaleX(-1);transition:translate .6s ease}
+.home-orbital .interactive-hero-scene[data-exploded=true] .preview-portrait{translate:0 0 70px}
+.home-orbital .scene-control-buttons button{font-size:.65rem;padding:8px 12px;min-height:34px}
+.home-orbital .scene-depth-control{font-size:.65rem}
+.home-orbital .scene-interaction-controls{padding:15px;margin-top:42px}
+.home-orbital .scene-drag-hint{font-size:.5rem}
+.orbital-home-footer{position:absolute;left:6vw;right:6vw;bottom:30px;display:flex;align-items:center;justify-content:space-between;gap:20px;border-top:1px solid #a0bdff1a;padding-top:22px;font-size:.63rem;color:#92a3c3;letter-spacing:.07em}
+.orbital-home-footer>a{color:#c4d3f0}
+.orbital-home-footer button{font:inherit;background:transparent;color:inherit;border:1px solid #a0bdff30;border-radius:6px;padding:7px 10px;cursor:pointer}
+.orbital-home-footer button:disabled{cursor:default;opacity:.6}
+.home-orbital a:focus-visible,.home-orbital button:focus-visible,.home-orbital input:focus-visible,.home-orbital [tabindex]:focus-visible{outline:2px solid var(--tone);outline-offset:5px}
+.home-orbital[data-still=true] *{animation-play-state:paused!important;transition:none!important}
+@media(min-width:1700px){.home-orbital{padding-inline:max(6vw,calc((100vw - 1500px)/2))}}
+@media(max-width:1100px){.home-orbital{gap:30px;padding-inline:35px}.home-orbital .preview-orbital{height:365px}.home-orbital .scene-control-buttons button{font-size:.58rem;padding:7px 9px}.orbital-home-description{font-size:.92rem}}
+@media(max-width:800px){.home-orbital{grid-template-columns:1fr;padding:125px 7vw 120px;gap:55px}.orbital-home-copy{max-width:600px}.orbital-home-copy h1{font-size:clamp(3.5rem,10vw,5.8rem)}.orbital-home-visual{max-width:470px}.home-orbital .preview-orbital{height:380px}.orbital-home-footer>span{display:none}}
+@media(max-width:500px){.home-orbital{padding:115px 22px 115px;gap:45px}.orbital-home-identity{font-size:.85rem;margin-bottom:26px}.orbital-home-eyebrow{font-size:.49rem}.orbital-home-copy h1{font-size:clamp(3.2rem,12vw,4.5rem)}.orbital-home-description{font-size:.9rem;margin-top:22px}.orbital-home-actions .btn{font-size:.75rem;padding:12px 15px}.home-orbital .preview-orbital{height:310px}.home-orbital .scene-control-buttons button{font-size:.6rem;padding:8px 10px}.orbital-home-footer{left:22px;right:22px;font-size:.58rem}}
+@media(prefers-reduced-motion:reduce){.home-orbital *{animation:none!important;transition:none!important}.orbital-home-copy,.home-orbital .preview-orbital{transform:none!important}}

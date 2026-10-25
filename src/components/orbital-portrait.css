@@ -1,0 +1,10 @@
+/* 01 — slow orbits and offset portrait parallax */
+.concept-1{background:radial-gradient(ellipse at 80% 40%,#30447766,transparent 60%),#0f1627}
+.preview-orbital{height:400px;position:relative;display:grid;place-items:center;transform:translate(calc(var(--mx)*18px),calc(var(--my)*12px));transition:transform .35s ease-out}
+.preview-orbital .preview-portrait{position:relative;width:90%;height:90%;z-index:1;mask-image:linear-gradient(#000 78%,transparent)}
+.preview-orbit{position:absolute;width:100%;aspect-ratio:1;border:1px solid #9cbcff50;border-radius:50%;animation:preview-orbit-spin 18s linear infinite}
+.orbit-a{transform:rotateX(65deg) rotate(-25deg)}
+.orbit-b{width:90%;border-color:#bca5ff33;animation-direction:reverse;animation-duration:25s}
+.preview-orbit:before{content:"";position:absolute;top:12%;left:12%;width:8px;height:8px;border-radius:50%;background:#c0d4ff;box-shadow:0 0 20px #94bbff}
+.preview-orbit-label{position:absolute;bottom:0;letter-spacing:.18em;font-size:.45rem;color:#9eb5e0}
+@keyframes preview-orbit-spin{from{rotate:0deg}to{rotate:360deg}}
